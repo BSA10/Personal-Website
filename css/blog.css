@@ -1,0 +1,30 @@
+
+
+.Article{
+    padding: 10px;
+    margin: 20px;
+    height: 100px;
+
+}
+
+.Title{
+    font-size: 36px;
+    width: 100%;
+    
+}
+
+.Description{
+    font-size: 16px;
+    padding: 5px 0px;
+    
+}
+.Date{
+    font-size: 12px;
+}
+
+
+.AnchorTitle{
+    text-decoration: none;
+    color: black;
+}
+
