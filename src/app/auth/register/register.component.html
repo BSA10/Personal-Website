@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+
+</head>
+<body>
+
+    <app-header></app-header>
+
+    <div class="main">
+
+    <!-- Sign up form -->
+    <section class="signup">
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-form">
+                    <h2 class="form-title">Sign up</h2>
+                    <form class="register-form" id="register-form" [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+                        <!-- <span class="text-danger" *ngIf="signUpForm.invalid">Please full fill the *required fields</span> -->
+                        <!-- {{signUpForm.get('confirm_password')?.hasError('confirm_password') || signUpForm.get('confirm_password')?.value !== signUpForm.get('password')?.value}} -->
+                        <div class="mb-3" *ngIf="signUpForm.invalid && (signUpForm.touched || signUpForm.dirty)">
+                            <span *ngIf="signUpForm.get('username')?.hasError('minlength')"></span>
+                            <!-- <span class="text-danger" *ngIf="signUpForm.get('hasAcceptTerms')?.hasError('required') && signUpForm.get('confirm_password')?.touched">Check the agree of all statements in the Terms.<br></span> -->
+                            <span class="text-danger" *ngIf="signUpForm.get('username')?.hasError('minlength')"> Username is 3 letter at least.<br></span>
+                            <span class="text-danger" *ngIf="signUpForm.get('password')?.hasError('minlength')"> Password length is 6 at least.<br></span>
+                            <span class="text-danger" *ngIf="signUpForm.get('email')?.hasError('email')"> This is not an email.</span>
+                            <span class="text-danger" *ngIf="signUpForm.get('confirm_password')?.hasError('confirm_password') || signUpForm.get('confirm_password')?.value !== signUpForm.get('password')?.value"> Password doesn't match with the confirm password.</span>
+                        </div>
+                        <div class="form-group">
+
+                            <label for="first_name"><i class="zmdi zmdi-account material-icons-name"></i><span 
+                                class="text-danger" 
+                                *ngIf="signUpForm.get('first_name')?.hasError('required')"> *</span></label>
+                            <input type="text" name="name" id="first_name" [formControlName]="'first_name'" placeholder="Your Name"/>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="username"><i class="zmdi zmdi-account material-icons-name"></i><span 
+                                class="text-danger" 
+                                *ngIf="signUpForm.get('username')?.hasError('required')"> *</span></label>
+                            <input type="text" name="name" id="username" [formControlName]="'username'" placeholder="Your Username"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><i class="zmdi zmdi-email"></i><span 
+                                class="text-danger" 
+                                *ngIf="signUpForm.get('email')?.hasError('required')"> *</span></label>
+                            <input type="email" name="email" id="email" [formControlName]="'email'" placeholder="Your Email"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="pass"><i class="zmdi zmdi-lock"></i><span 
+                                class="text-danger" 
+                                *ngIf="signUpForm.get('password')?.hasError('required')"> *</span></label>
+                                <!-- <span>{{signUpForm.get('password').hasError('required')}}</span> -->
+                            <input type="password" name="pass" id="pass" [formControlName]="'password'" placeholder="Password"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="re_pass"><i class="zmdi zmdi-lock-outline"></i><span 
+                                class="text-danger" 
+                                *ngIf="signUpForm.get('confirm_password')?.hasError('required')"> *</span></label>
+                            <input type="password" name="re_pass" id="re_pass" [formControlName]="'confirm_password'" placeholder="Repeat your password"/>
+                        </div>
+                        <div class="form-group">
+                            
+                            <input type="checkbox" name="agree-term" [formControlName]="'hasAcceptTerms'" id="agree-term" class="agree-term" />
+                            <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                        </div>
+                        <div class="form-group form-button">
+                            <input type="submit" [disabled]="signUpForm.get('confirm_password')?.value !== signUpForm.get('password')?.value" name="signup" id="signup" class="form-submit" value="Register"/>
+                        </div>
+                    </form>
+                </div>
+                <div class="signup-image">
+                    <figure><img src="assets/css/loginStatic/images/signup-image.jpg" alt="sing up image"></figure>
+                    <a href="/login" class="signup-image-link">I am already member</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</div>
+
+<!-- JS -->
+<script src="assets/css/loginStatic/vendor/jquery/jquery.min.js"></script>
+<script src="assets/css/loginStatic/js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

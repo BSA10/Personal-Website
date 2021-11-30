@@ -1,0 +1,24 @@
+
+<header >
+    <div class="headerUrl">
+        <a [routerLink]="['/']" routerLinkActive="router-link-active" >Home</a>
+        <a [routerLink]="['/blog']" routerLinkActive="router-link-active" >Blog</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="LoginRegister" *ngIf="isLoggedIn()">
+          <div class="dropdown">
+            <span style="margin: 0 30px;" *ngIf="isUsernameFound()">{{username}}</span>
+            <div class="dropdown-content">
+                <span><a class="" [routerLink]="['/profile']" routerLinkActive="router-link-active">Profile</a><br></span>
+                <span><a class="" [routerLink]="['/']" routerLinkActive="router-link-active" (click)="logout()">Logout</a></span>
+            </div>
+        </div>
+        <!-- <a class="Login" [routerLink]="['/']" routerLinkActive="router-link-active" (click)="logout()">Logout</a> -->
+    </div>
+    <div class="LoginRegister" *ngIf="!isLoggedIn()">
+        <a class="Register" [routerLink]="['/signup']" routerLinkActive="is-active"  >Regsiter</a>
+        <a class="Login" routerLink="/login" >Login</a>
+        <!-- <a class="Login" routerLink="/" (click)="logout()">Logout</a> -->
+    </div>
+    
+</header>

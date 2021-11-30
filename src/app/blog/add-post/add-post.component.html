@@ -1,0 +1,30 @@
+
+    <app-header></app-header>
+    <div id="" class="ContainerFluid">
+        <!-- <div class="formContact"> -->
+            <div class="forms" >
+            
+            <span class="headerContact">Add Article</span>
+            
+            <form class="forms" [formGroup]="addPostForm" (ngSubmit)="addPost()">
+                
+                <label for="Email">Title</label>
+                <input id="email" type="text" [formControlName]="'title'" placeholder="Enter Your Title">
+                
+                <div>
+                <label for="message">Message</label>
+                <!-- <textarea name="message" id="message"  cols="30" rows="10"></textarea> -->
+                <editor class="" id="message" [formControlName]="'body'" [init]="{plugins:'link'}"></editor>
+            </div>
+                <span class="center">
+                    <button class="button-light" type="submit" *ngIf="timeToSendAgain()">Submit</button>
+                </span>
+                <span class="center" style="font-size: 18px;" *ngIf="emailSendSuccess()">Message has been sent successfully</span>
+            
+            </form>
+        </div>
+    <!-- </div> -->
+    </div>
+
+
+

@@ -1,0 +1,53 @@
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <app-admin-header></app-admin-header>
+
+    <div class="ContainerFluid">
+        <h1 class="center">ADMIN</h1>
+
+    <hr>
+    <h3 class="center">Blogs</h3>
+    <table class="table">
+        <thead class="table-dark">
+        <tr>
+           <th>Id</th>
+           <th>Title</th>
+           <th>Action</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let post of posts | async">
+        <tr>
+        <td>{{post.id}}</td>
+        <td>{{post.title}} <a [routerLink]="['/commentsControl']" routerLinkActive="router-link-active" ></a></td>
+        <td>
+            <button type="submit" class="btn btn-danger" (click)="deletePost(post.id)">Delete</button>
+        </td>
+    </tr>
+    </tbody>
+    </table>
+    <a class="Login center" [routerLink]="['/blog/add-post']" routerLinkActive="router-link-active">Add Post</a>
+    <!-- <a class="Login center" (click)="shit()" [username]="'BSA'">CLick</a> -->
+</div>
+
+<div class="ContainerFluid">
+    <h3 class="center">Comments</h3>
+    <table class="table">
+        <thead class="table-dark">
+        <tr>
+           <th>Id</th>
+           <th>Comment</th>
+           <th>Action</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let comment of comments | async">
+        <tr>
+        <td>{{comment.id}}</td>
+        <td>{{comment.content}}</td>
+        <td>
+            <button type="submit" class="btn btn-danger" (click)="deleteComment(comment.id)">Delete</button>
+        </td>
+    </tr>
+    </tbody>
+    </table>
+</div>

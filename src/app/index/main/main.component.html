@@ -1,0 +1,104 @@
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<div class="Container">
+    <!-- <div class="landingPage"> -->
+    <div class="ContainerFluid">
+
+    
+    <div id="home" class="Intro">
+        <div class="HeaderName">
+        <span class="Name">BASSAM ALHARBI</span>
+        </div>    
+
+        <div class="bottom">
+            <a class="" href="http://twitter.com/xp187">
+                <img src="assets/img/twitter.png" width="30px" alt="Twitter">
+            </a>
+            <a class="px-2" href="http://github.com/bsa10">
+                <img src="assets/img/github.png"  width="30px" alt="Github">
+            </a>
+        </div>
+        <div class="bottom">
+            <a class="DownloadCv"  target="_blank" routerLink="/assets/pdf/cv.pdf" routerLinkActive="router-link-active" >Download CV</a>
+        </div>
+    </div>
+    
+<!-- </div> -->
+</div>
+
+<div id="skill" class="Contact">
+        <div class="skillBox">
+            
+            <div class="aboutMe">
+                <h1 class="center">ABOUT ME</h1>
+                <p class="DetailsAboutMe">
+                    I am senior Software Engineer at Hafar Albatin University. I mostly do web application including the frontend and backend Using Java, JavaScript. I had enough knoledge in web application from building it until deploy it.
+                    I have some knowledge with programming languages and frameworks and tools you can see it in Technologies section. I have Full Stack Java certification to build scalable web application.
+                    
+                </p>
+            </div>
+            
+            <div class="skill">
+            <h1 class="center">TECHNOLOGIES</h1>
+            <h2 class="center">Programming Languages</h2>
+            <div class="ThreeSkills">
+                <div class="circle">Java</div>
+                <div class="circle">JavaScript</div>  
+                <div class="circle">Paython</div>
+            </div>
+            <h2 class="center">Frameworks / Tools</h2>
+            <div class="ThreeSkills">
+                <div class="circle">JavaFX</div>
+                <div class="circle">Spring</div>
+            </div>
+            <div class="ThreeSkills">
+                <div class="circle">Angular</div>
+                <div class="circle">Jenkins</div>
+                <div class="circle">MySQL</div>
+            </div>
+            <div class="ThreeSkills">
+                <div class="circle">Docker</div>
+                <div class="circle">AWS</div>
+            </div>
+            
+            
+        </div>
+            
+    </div>
+</div>
+
+<div id="contact" class="Contact">
+        <div class="formContact">
+            <div class="forms" >
+            
+            <span class="headerContact">Contact</span>
+            <h4 *ngIf="successfulSend === true" class="center successfulMessage">Email Sent Successfully</h4>
+            <h4 *ngIf="errorMessage === true" class="center errorMessage">There is an error while sending an email.</h4>
+            <form class="forms" [formGroup]="contactFrom" (ngSubmit)="OnSubmit()">
+                
+                <label for="Email">Email</label>
+                <input id="email" type="text" [formControlName]="'email'" placeholder="Enter Your Email">
+                
+                
+                <label for="Title">Title</label>
+                <input id="Title" type="text" [formControlName]="'title'" placeholder="Enter a Title">
+            
+                
+                <label for="message">Message</label>
+                <textarea name="message" id="message" [formControlName]="'message'" cols="30" rows="10"></textarea>
+                <span class="center my-3">
+                    <button class="button-light" id="submit-feedback" type="submit" *ngIf="timeToSendAgain()">Submit</button>
+                </span>
+                <span class="center" style="font-size: 18px;" *ngIf="emailSendSuccess()">Message has been sent successfully</span>
+            
+            </form>
+        </div>
+    </div>
+</div>
+
+</div> <!-- Container class -->
+
+
+<router-outlet></router-outlet>

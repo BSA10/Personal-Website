@@ -1,0 +1,54 @@
+
+<app-header></app-header>
+<div class="main">
+
+
+    <!-- Sing in  Form -->
+    <section class="sign-in">
+        <div class="container">
+            <div class="signin-content">
+                <div class="signin-image">
+                    <figure><img src="assets/img/signin-image.jpg" alt="sing up image"></figure>
+                    <a [routerLink]="['/signup']" routerLinkActive="router-link-active"  class="signup-image-link">Create an account</a>
+                </div>
+
+                <div class="signin-form">
+                    <h2 class="form-title">Login</h2>
+                    <form  class="register-form" id="login-form" [formGroup]="loginFrom" (ngSubmit)="onSubmit()" >
+                        <div class="form-group form-button" *ngIf="itsCorrect()">
+                            <span style="color: red;">The username/password is incorrect.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="username"><span style="color:red;" *ngIf="loginFrom.get('username')?.errors?.['required']">*</span><i class="zmdi zmdi-account material-icons-name"></i></label>
+                            <input type="text" id="username" formControlName="username" placeholder="Username" />
+                            
+                            <!-- <div *ngIf="username.invalid && (username.dirty || username.touched)"
+                            class="alert alert-danger">
+                            <div *ngIf="username.errors?.['required']">
+                                Name is required.
+                            </div>
+                            </div> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="password"><span style="color:red;" *ngIf="loginFrom.get('password')?.invalid">*</span><i class="zmdi zmdi-lock"></i></label>
+                            <input type="password" name="password" id="password" [formControlName]="'password'" placeholder="Password"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="remember-me" id="remember-me"  class="agree-term" />
+                            <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
+                        </div>
+                        <div class="form-group form-button">
+                            <input type="submit" name="signin" id="signin" class="form-submit" value="Log in" />
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<!-- JS -->
+<!-- <script th:src="@{../loginStatic/vendor/jquery/jquery.min.js}"></script>
+<script th:src="@{../loginStatic/js/main.js}"></script> -->

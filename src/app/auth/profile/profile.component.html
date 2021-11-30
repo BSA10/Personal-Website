@@ -1,0 +1,31 @@
+<app-admin-header></app-admin-header>
+<div class="ContainerFluid">
+
+    
+    <table>
+        <tr>
+            <td><span>First name: </span></td>
+            <td>{{user.first_name}}</td>
+        </tr>
+        <tr>
+            <td><span>Last name: </span></td>
+            <td>{{user.last_name}}</td>
+        </tr>
+        <tr>
+            <td><span>Username</span></td>
+            <td>{{user.username}}</td>
+        </tr>
+        <tr>
+            <td><span>Email</span></td>
+            <td>{{user.email}}</td>
+        </tr>
+        <tr>
+            <td><span>Password</span></td>
+            <td><a [routerLink]="['/edit-profile',{password:true}]" routerLinkActive="router-link-active" >Change Password</a></td>
+        </tr>
+    </table>
+    
+    <a class="Login center mt-10" [routerLink]="['/edit-profile']" routerLinkActive="router-link-active" >Edit Profile</a>
+    
+    
+</div>

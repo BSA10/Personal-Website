@@ -1,0 +1,28 @@
+.p-5 {
+    padding: 5px;
+}
+.px-5{
+    padding: 0 5px;
+}
+.m-5{
+    margin: 10px 0;
+}
+.p-3 {
+    padding: 3px;
+}
+.px-3 {
+    padding: 0 3px;
+}
+.m-3{
+    margin: 3px;
+}
+.mx-3{
+    margin: 0 3px;
+}
+.py-3{
+    padding: 3px 0;
+}
+.my-3{
+    margin:  3px 0;
+}
+

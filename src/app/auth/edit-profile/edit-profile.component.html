@@ -1,0 +1,40 @@
+<app-admin-header></app-admin-header>
+
+<div class="ContainerFluid">
+
+    <div class="update-form">
+        <h2 class="form-title center" *ngIf="changePasswordParam === false">Edit Profile</h2>
+        <h2 class="center" *ngIf="changePasswordParam === true">Change Password</h2>
+        <h3 *ngIf="successfulChange === true" class="center successfulMessage">Successfull Change {{counter}}s</h3>
+        <form (ngSubmit)="onSubmit()" [formGroup]="updateForm">
+            
+            <input  type="text" name="id" id="" formControlName="id" hidden value="{{user.id}}">
+            <div class="form-group" *ngIf="changePasswordParam === false">
+                <label class="form-label" for="first_name">First Name</label>
+                <input class="form-control" type="text" name="first_name" id="first_name" formControlName="first_name" value="{{user.first_name}}" >
+            </div>
+            <div class="form-group" *ngIf="changePasswordParam === false">
+                <label class="form-label" for="last_name">Last Name</label>
+                <input class="form-control" type="text" name="last_name" id="last_name" formControlName="last_name" value="{{user.last_name}}">
+            </div>
+            <div class="form-group" *ngIf="changePasswordParam === false">
+                <label class="form-label" for="username">Username</label>
+                <input class="form-control" type="text" name="username" id="username" formControlName="username" value="{{user.username}}">
+            </div>
+            <div class="form-group" *ngIf="changePasswordParam === false">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-control" type="text" name="email" id="email" formControlName="email" value="{{user.email}}">
+            </div>
+            <div class="form-group" >
+                <label class="form-label" for="password">Password</label>
+                <input class="form-control" type="password" name="password" id="password" formControlName="password">
+            </div>
+            <div class="form-group">
+                <button class="form-button center" [disabled]="successfulChange === true" type="submit">Submit Change</button>
+            </div>
+    
+        </form>
+
+    </div>
+
+</div>
