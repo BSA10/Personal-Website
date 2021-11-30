@@ -24,11 +24,5 @@ export class BlogComponent implements OnInit {
     this.posts = this.postService.getAllPosts();
   }
 
-  // testAuth(){
-  //   console.log(this.authService.isAuthenticated());
-     
-  // }
-
-  
   
 }

@@ -53,14 +53,7 @@ export class MainComponent implements OnInit {
       this.contactFrom.get('title')?.setValue('');
       this.contactFrom.get('message')?.setValue('');
       this.buttonLoading!.innerHTML = 'Submit';
-      // window.location.reload();
-      // this.successSend = true;
-        // this.show = false;
-        // this.router.navigateByUrl('/');
-        // setTimeout(() => {
-        //   this.successSend= false;
-        //   this.show=true;
-        // }, 10000);
+
         this.successfulSend = true;
         setTimeout(() => {
           window.location.reload();

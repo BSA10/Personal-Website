@@ -51,12 +51,7 @@ export class SingPostComponent implements OnInit {
     this.addCommentForm = new FormGroup({
       comment: this.comment
     });
-    // this.comments = [{
-    //   id: 0,
-    //   content: '',
-    //   created_at: new Date(),
-    //   user : new User()
-    // }]
+ 
     this.user= {
       id: 0,
       username: '',
@@ -79,9 +74,7 @@ export class SingPostComponent implements OnInit {
     this.addPostService.getPost(this.permaLink).subscribe((data:PostPayload) => {
       this.post = data;  
       this.comments = data.comments as Array<CommentPayload>;
-      // console.log(data.comments?.map(data=>{return data.user}));
-      // this.comments.map(data=> {data.user = data.user as User})
-      
+
     },(err: any) => {
       console.log('Failure Response');
     })
@@ -99,7 +92,6 @@ export class SingPostComponent implements OnInit {
     this.commentPayload.content = this.addCommentForm.get('comment')?.value
     
     this.postService.addComment(this.commentPayload,this.post.id,this.username).subscribe(data=>{
-      // window.scrollTo(0,0);
       this.buttonLoading?.removeAttribute('disabled');
       this.addCommentForm.get('comment')?.setValue('');
       this.buttonLoading!.innerHTML = 'Add Comment';
@@ -118,8 +110,6 @@ export class SingPostComponent implements OnInit {
   }
 
   arabicStyle(){
-    // var test = document.getElementsByClassName('blog-title');
-    // test[0].setAttribute('style','display:flex; justify-content:right;')
     document.getElementsByClassName('blog-title')[0].setAttribute('style','display:flex; justify-content:right;');
     document.getElementsByClassName('blog-name')[0].setAttribute('style','display:flex; justify-content:right;');
     document.getElementsByClassName('blog-createdAt')[0].setAttribute('style','display:flex; justify-content:right;');

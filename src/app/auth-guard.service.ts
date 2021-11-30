@@ -17,7 +17,7 @@ export class AuthGuardService implements CanActivate{
   {
     
     let isAuthenticated = this.authService.isLoggedIn();
-    // let isAuthenticated = true;
+    
     if(isAuthenticated){
       return true;
     } else {

@@ -47,13 +47,12 @@ export class AuthService {
     return this.httpClient.post(this.url+'/api/user/update', updateProfile);
    }
 
-   isLoggedIn() {
-    // this.getUserByUsername(this.getUsername()).subscribe(data=>{
-    //   if(data.role === 'ADMIN_ROLE')
-    //     return this.isAdminRole = true;
-    //   else
-    //     return this.isAdminRole;
-    // })
+   isLoggedIn() { // I have to update it
+    /**
+     * TODO:
+     * Write a better method to track the user login in.
+     */
+    
     return localStorage.getItem('authenticationToken') != null ;
   }
 
@@ -78,26 +77,14 @@ export class AuthService {
     return this.httpClient.get<User>(this.url+'/api/user/getUser',{params:new HttpParams().append('username',this.getUsername())});
   }
 
-  
-
-  // getStringUsername():string{
-  //   var ss = JSON.parse(localStorage.getItem('username') || '{}');
-  //   return ss;
-  // }
 
      isUsernameAdmin():boolean{
-    
-  
-    //  let s =  this.getUser('BSA').subscribe(data=>{
-    //    this.isAdminRole =true;
-    //  })
-     
-     
+      /**
+       * TODO:
+       * Change the rules and try to make every user have a authorites.
+       * Get the authorites from the backend.
+       */
      return this.isAdminRole;
-    
-    // console.log(this.user);
-    // const promis2 = this.user?.role === 'ADMIN_ROLE';
-    // console.log(this.isAdminRole);
     
   }
 

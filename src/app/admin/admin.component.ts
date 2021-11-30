@@ -57,11 +57,8 @@ export class AdminComponent implements OnInit {
 
   shit(){ // This method for testing the isUsernameAdmin() from AuthService for implementing Roles in my website 
           // just to manage the admins and regular users.
-    
     console.log('Shit method');
-          
       console.log(this.authService.isUsernameAdmin());
-
   }
   
 
