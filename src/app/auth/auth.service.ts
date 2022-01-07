@@ -78,14 +78,17 @@ export class AuthService {
   }
 
 
-     isUsernameAdmin():boolean{
+     isUsernameAdmin(){
       /**
        * TODO:
        * Change the rules and try to make every user have a authorites.
        * Get the authorites from the backend.
        */
-     return this.isAdminRole;
-    
+    // this.getUserLoggedIn().subscribe(data => {
+    //   console.log(data.role === "ADMIN_ROLE");
+    //   var role= data.role;
+    //   localStorage.setItem('usernameRole',);
+    // });
   }
 
 }

@@ -26,4 +26,9 @@ export class AdminHeaderComponent implements OnInit {
   isUsernameFound(){
     return this.authService.getUsername() != null;
   }
+  isRoleAdmin(){
+
+    
+    return this.authService.isUsernameAdmin();
+  }
 }
