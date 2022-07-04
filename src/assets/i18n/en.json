@@ -40,11 +40,8 @@
             "Title": "Tashlihuk",
             "Description": "The name is an arabic word in cars field meaning is similar to scrap or junk cars to take parts of any cars and try to reused or recycle it. This Project is new solution inventory managemeny system for scrap and junk cars. I help to track every part of the system of any cars.",
             "imgs": [
-                "assets/images/agrourbana/agrourbana1.png",
-                "assets/images/agrourbana/agrourbana2.png",
-                "assets/images/agrourbana/agrourbana3.png",
-                "assets/images/agrourbana/agrourbana4.png",
-                "assets/images/agrourbana/agrourbana5.png"
+                "assets/images/project/tashlihuk.png"
+
             ],
             "Technologies": ["Spring", "Angular", "SCSS", "Angular Material", "JWT", "MySQL"]
         }
@@ -58,7 +55,7 @@
             "Title": "Covid-19 statics for Hafr Al-Batin",
             "Description": "Covid-19 Statics from Saudi Minstry of Health",
             "ghLink": "https://github.com/BSA10/HafrAlBatin-covid-19",
-            "demoLink": "https://projects.andresjosehr.com/pokemon-list",
+            "demoLink": "_blank",
             "Technologies": ["HTML", "CSS", "API", "Bootstrap","Spring", "MySQL"]
         }
     ],
