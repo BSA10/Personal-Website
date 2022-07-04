@@ -21,16 +21,15 @@
 
     "Experience.Title": "Experience",
     "Experience.Jobs": [{
-            "Tab": "Project",
-            "Title": "Fullstack developer",
+            "Tab": "Semiksa",
+            "Title": "Fullstack Java Developer",
             "Date": "December 2019 - Present",
             "Description": [
-              "Creation and maintenance of a monitoring platform with graphics in WordPress.",
-              "Functional programming in templates and plugins to add the necessary monitoring features.",
-              "Implementation of continuous integration and daily backups.",
-              "Creation and maintenance of a second Monitoring Platform Done in Angular, Angular Material, Laravel, Mysql, RxJS, Sass with graphics (configurable), alarm system, and user management and configuration of general parameters.",
-              "Planning meetings in reports."
-            ]
+                "I have built the backend of Semi website with Spring framework. ",
+                "I manage the Virtual Private Server of Semi website.",
+                "I did css styling in Salla website for some projects and help the team for styling Salla websites.",
+                "Consultant in anything related to the development of websites and technology."
+              ]
         }
     ],
 
