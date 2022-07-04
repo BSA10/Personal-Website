@@ -1,0 +1,71 @@
+{
+
+    "Header.Item1" : "About me",
+    "Header.Item2" : "Experience",
+    "Header.Item3" : "Projects",
+    "Header.Item4" : "Contact",
+    "Header.cvBtn" : "Resume",
+    "Header.cvName": "BASSAM's_Resume.pdf",
+
+    "Banner.Pretitle": "Hello! My name is",
+    "Banner.Description": "I have an experience in development process and I try to build good solution for any problems. I dedicated to writing clean code, refactoring, resuable and scalable code in <span class='underline'>Angular</span> and <span class='underline'>Spring</span> applying best practices and developments standards.",
+    "Banner.ActionBtn": "Get in touch",
+
+    "AboutMe.Title": "About me",
+    "AboutMe.Paragraphs": [
+        "In my <span class='underline'>experience as developer</span>, I seek to train every day. I have worked writing <span class='underline'>platforms</span>, <span class='underline'>performing websites</span>, and covering backend developer roles with <span class='underline'>Spring and MySQL</span>.",
+        "My skills also include implementing system improvements, optimizing sites, standardizing patterns, and suggesting and executing ideas that add value to the project I'm working on.",
+        "Some of the technologies that I have trained and worked on include (but are not limited to):"
+    ],
+
+
+    "Experience.Title": "Experience",
+    "Experience.Jobs": [{
+            "Tab": "Project",
+            "Title": "Fullstack developer",
+            "Date": "December 2019 - Present",
+            "Description": [
+              "Creation and maintenance of a monitoring platform with graphics in WordPress.",
+              "Functional programming in templates and plugins to add the necessary monitoring features.",
+              "Implementation of continuous integration and daily backups.",
+              "Creation and maintenance of a second Monitoring Platform Done in Angular, Angular Material, Laravel, Mysql, RxJS, Sass with graphics (configurable), alarm system, and user management and configuration of general parameters.",
+              "Planning meetings in reports."
+            ]
+        }
+    ],
+
+    "FeatureProjects.Title": "My projects",
+    "FeatureProjects.Label": "Featured Project",
+    "FeatureProjects.Projects": [{
+            "Title": "Tashlihuk",
+            "Description": "The name is an arabic word in cars field meaning is similar to scrap or junk cars to take parts of any cars and try to reused or recycle it. This Project is new solution inventory managemeny system for scrap and junk cars. I help to track every part of the system of any cars.",
+            "imgs": [
+                "assets/images/agrourbana/agrourbana1.png",
+                "assets/images/agrourbana/agrourbana2.png",
+                "assets/images/agrourbana/agrourbana3.png",
+                "assets/images/agrourbana/agrourbana4.png",
+                "assets/images/agrourbana/agrourbana5.png"
+            ],
+            "Technologies": ["Spring", "Angular", "SCSS", "Angular Material", "JWT", "MySQL"]
+        }
+    ],
+
+
+
+    "OtherProjects.Title": "More projects",
+    "OtherProjects.Projects": [
+        {
+            "Title": "Covid-19 statics for Hafr Al-Batin",
+            "Description": "Covid-19 Statics from Saudi Minstry of Health",
+            "ghLink": "https://github.com/BSA10/HafrAlBatin-covid-19",
+            "demoLink": "https://projects.andresjosehr.com/pokemon-list",
+            "Technologies": ["HTML", "CSS", "API", "Bootstrap","Spring", "MySQL"]
+        }
+    ],
+    "Contact.Pretitle": "What’s Next",
+    "Contact.Title": "Get in touch!",
+    "Contact.Content": "I will be happy to receive your contact if you want to talk about new opportunities. Write me, and I will reply as soon as I see your message. Simple one-page design that features a profile letter with basic information about a person.",
+    "Contact.Btn": "Say Hello"
+
+
+}
