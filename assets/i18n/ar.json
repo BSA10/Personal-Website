@@ -40,11 +40,7 @@
             "Title": "Tashlihuk",
             "Description": "The name is an arabic word in cars field meaning is similar to scrap or junk cars to take parts of any cars and try to reused or recycle it. This Project is new solution inventory managemeny system for scrap and junk cars. I help to track every part of the system of any cars.",
             "imgs": [
-                "assets/images/agrourbana/agrourbana1.png",
-                "assets/images/agrourbana/agrourbana2.png",
-                "assets/images/agrourbana/agrourbana3.png",
-                "assets/images/agrourbana/agrourbana4.png",
-                "assets/images/agrourbana/agrourbana5.png"
+                "assets/images/project/tashlihuk.png"
             ],
             "Technologies": ["Laravel", "Angular", "SASS", "Angular Material", "RxJS"]
         }
@@ -54,10 +50,10 @@
 
     "OtherProjects.Title": "مشاريع إضافية",
     "OtherProjects.Projects": [{
-            "Title": "Pokemon",
-            "Description": "Buscador de pokemons que utiliza la pokeapi. Se usó programación orientada a objetos para organizar la información de los pokemons junto con su respectiva imagen.",
-            "ghLink": "https://github.com/andresjosehr/pokemon-angular",
-            "demoLink": "https://proyectos.andresjosehr.com/pokemon-list",
+            "Title": "إحصائيات كورونا في حفر الباطن",
+            "Description": "جمع احصائيات كورونا في حفرالباطن",
+            "ghLink": "https://github.com/BSA10/HafrAlBatin-covid-19",
+            "demoLink": "_blank",
             "Technologies": ["Angular", "RxJs", "API", "Bootstrap"]
         }
     ],
