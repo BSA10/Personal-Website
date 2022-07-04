@@ -1,0 +1,71 @@
+{
+
+    "Header.Item1": "عنّي",
+    "Header.Item2": "الخبرات",
+    "Header.Item3": "المشاريع",
+    "Header.Item4": "التواصل",
+    "Header.cvBtn": "السيرة الذاتية",
+    "Header.cvName": "BASSAM's_Resume.pdf",
+
+    "Banner.Pretitle": "هلا ومرحبا! معك",
+    "Banner.Description": "لدي خبرة كافية في اللغات البرمجية وايجاد حلول من خلالها ك Full Stack Developer بتطوير انظمة وايجاد الحلول المناسبة بإستخدام Spring framework و Angular framework لعمل مشاريع قابلة للتوسع. ولدي خبرة ٦ شهور في تطوير ك Full Stack Developer و التصميم وتطوير التصاميم وBots وإيجاد حلول برمجية كعمل جزئي في شركة ناشئة.",
+    "Banner.ActionBtn": "خلنا على تواصل",
+
+    "AboutMe.Title": "عنّي",
+    "AboutMe.Paragraphs": [
+        "",
+        "",
+        ""
+    ],
+
+
+    "Experience.Title": "الخبرات",
+    "Experience.Jobs": [
+      {
+            "Tab": "Semiksa",
+            "Title": "Fullstack Java Developer",
+            "Date": "January 2022 - June 2022",
+            "Description": [
+              "I have built the backend of Semi website with Spring framework. ",
+              "I manage the Virtual Private Server of Semi website.",
+              "I did css styling in Salla website for some projects and help the team for styling Salla websites.",
+              "Consultant in anything related to the development of websites and technology."
+            ]
+      }
+    ],
+
+    "FeatureProjects.Title": "المشاريع",
+    "FeatureProjects.Label": "المشاريع",
+    "FeatureProjects.Projects": [{
+            "Title": "Tashlihuk",
+            "Description": "The name is an arabic word in cars field meaning is similar to scrap or junk cars to take parts of any cars and try to reused or recycle it. This Project is new solution inventory managemeny system for scrap and junk cars. I help to track every part of the system of any cars.",
+            "imgs": [
+                "assets/images/agrourbana/agrourbana1.png",
+                "assets/images/agrourbana/agrourbana2.png",
+                "assets/images/agrourbana/agrourbana3.png",
+                "assets/images/agrourbana/agrourbana4.png",
+                "assets/images/agrourbana/agrourbana5.png"
+            ],
+            "Technologies": ["Laravel", "Angular", "SASS", "Angular Material", "RxJS"]
+        }
+    ],
+
+
+
+    "OtherProjects.Title": "مشاريع إضافية",
+    "OtherProjects.Projects": [{
+            "Title": "Pokemon",
+            "Description": "Buscador de pokemons que utiliza la pokeapi. Se usó programación orientada a objetos para organizar la información de los pokemons junto con su respectiva imagen.",
+            "ghLink": "https://github.com/andresjosehr/pokemon-angular",
+            "demoLink": "https://proyectos.andresjosehr.com/pokemon-list",
+            "Technologies": ["Angular", "RxJs", "API", "Bootstrap"]
+        }
+    ],
+
+    "Contact.Pretitle": "ما القادم",
+    "Contact.Title": "خلنا على تواصل!",
+    "Contact.Content": "بأكون سعيد لو تواصلت معي في اي فرصة قادمة. إرسل لي وسأرد عليك بأسرع ما يمكنني.",
+    "Contact.Btn": "سلّم"
+
+
+}
